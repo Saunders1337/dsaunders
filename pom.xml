@@ -111,6 +111,7 @@
                         <goals><goal>jar</goal></goals>
                     </execution>
                 </executions>
+                <configuration><source>8</source> </configuration>
             </plugin>
         </plugins>
     </build>
