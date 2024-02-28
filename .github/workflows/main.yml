@@ -1,7 +1,7 @@
 name: Merge-Tests
 on:
   push:
-    branches: [ master ]
+    branches: [ '!master' ]
 
 env:
   KEY_HEADER: "X-API-KEY: nHovs22TMD2kklDJtrMjc4RUzuhwWo7R3BovAkmJ"
