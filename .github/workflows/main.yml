@@ -4,8 +4,8 @@ on:
     branches: [ master ]
 
 env:
-  KEY_HEADER: "X-API-KEY:nHovs22TMD2kklDJtrMjc4RUzuhwWo7R3BovAkmJ"
-  PAYLOAD: "{ \"gitHub\": { \"owner\": \"<OWNER>\", \"repo\": \"<REPO>\", \"sha\": \"${{ github.event.pull_request.head.sha }}\" } }"
+  KEY_HEADER: "X-API-KEY: nHovs22TMD2kklDJtrMjc4RUzuhwWo7R3BovAkmJ"
+  PAYLOAD: "{ \"gitHub\": { \"owner\": \"Saunders1337\", \"repo\": \"dsaunders\", \"sha\": \"${{ github.event.pull_request.head.sha }}\" } }"
 
 jobs:
   run-tests:
@@ -17,4 +17,4 @@ jobs:
              -H "$KEY_HEADER"
              -d "$PAYLOAD"
              -s
-             https://api.reflect.run/v1/suites/ID:dans/executions
+             https://api.reflect.run/v1/suites/dans/executions
